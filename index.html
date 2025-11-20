@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spacefacts Search Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Spacefacts Search Portal</h1>
+      <p class="subtitle">Explore space-related facts through a clean search interface</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="search">
+        <input id="q" type="text" placeholder="Search..." aria-label="Search query" />
+        <button id="go" aria-label="Run search">Search</button>
+      </div>
+      <div id="status" class="meta" role="status" aria-live="polite"></div>
+      <div id="error" class="error" role="alert"></div>
+    </section>
+
+    <section id="results" class="results container" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer container">
+    <div class="meta">
+      <span id="provider"></span>
+      <span>•</span>
+      <a href="https://spacefacts.onrender.com" id="backendLink" target="_blank" rel="noopener">Backend status</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
